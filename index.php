@@ -64,7 +64,7 @@ class ChildrenC extends A {
 }
 
 final class ChildrenD extends A {
-  protected int $someChildrenDproperty;
+  private int $someChildrenDproperty;
 
   public function getChildrenDProperty(): int {
     return $this->someChildrenDproperty;
