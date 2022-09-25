@@ -162,3 +162,9 @@ class NestedChildrenD extends ChildrenC {
     return $this->propertyNestedChildrenD + $this->property1;
   }
 }
+
+$nested = new NestedChildrenA;
+$nested->setPropertyNestedChildrenA(33);
+$nested->setProperty1(100);
+var_dump($nested->getPropertyNestedChildrenA());
+var_dump($nested->plus());
